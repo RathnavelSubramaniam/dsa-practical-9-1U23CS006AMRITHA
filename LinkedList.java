@@ -46,12 +46,13 @@ sc.close();
 }
 public void deleteBegin()
  {
-    if (head == null) {
+    if (head == null) 
+    {
         System.out.println("List is Empty");
     } else {
         Node temp = head;
         head = head.next;
-        System.out.println("Deleted Element");
+        System.out.println("Deleted Element is :1");
         if (head == null) {
             tail = null;
         }
