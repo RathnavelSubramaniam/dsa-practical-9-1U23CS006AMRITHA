@@ -43,10 +43,20 @@ list.deleteBegin();
 System.out.println("Linked List After Deleting at Beginning");
 list.displayList();
 sc.close();
-    }
+}
 public void deleteBegin()
-{
-// TYPE YOUR CODE HERE
+ {
+    if (head == null) 
+    {
+        System.out.println("List is Empty");
+    } else {
+        Node temp = head;
+        head = head.next;
+        System.out.println("Deleted Element is:"+temp.data);
+        if (head == null) {
+            tail = null;
+        }
+    }
 }
 public void displayList() {
         Node current = head;
